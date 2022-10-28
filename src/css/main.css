@@ -13,12 +13,27 @@
     --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
 }
 
+@font-face {
+    font-family: "WorkSans-Regular";
+    src: url("../font/WorkSans-Regular.ttf");
+    font-weight: regular;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "WorkSans-Bold";
+    src: url("../font/WorkSans-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
+
 
 input:not([type="radio"]):not([type="checkbox"]), button {
     appearance: none;
@@ -61,7 +76,7 @@ h4 {
 .greeting .title input {
     margin-left: 0.5rem;
     flex: 1 1 0%;
-    max-width: 0;
+    min-width: 0;
 }
 
 .greeting .title, 
